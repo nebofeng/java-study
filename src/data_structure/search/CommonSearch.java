@@ -24,8 +24,7 @@ public class CommonSearch {
 	 * 时间复杂度： o log（n）   n  n/2  n/4  假设 k次找到 。 n/(2的k次方) 即 2的k次方=n 所以k= logn
 	 * 
 	 */
-	public static int  binarySearch(int arr[], int target) throws Exception {
-	    
+	public static int  binarySearch(int arr[], int target) throws Exception {	    
 		if(arr==null) {
 			throw new Exception("ARR IS NULL");
 		}
@@ -45,11 +44,7 @@ public class CommonSearch {
 				high = (low+high)/2 -1;
 			}
 		}
-		 return Integer.MIN_VALUE;  
-		
-		
-		
-		
+		 return Integer.MIN_VALUE;  	 		
 	}
 	
 	
