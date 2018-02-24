@@ -16,26 +16,31 @@ package data_structure.sort;
  *  
  *  然后 从前往后遍历 ，找到第一个比基准数大的数，交换这两个数字，这时基准数跑到前面，并且基准数前面的数字都比它小。
  *  
+ *  
+ *  快速排序的最坏情况是看 枢纽（pivot）的选择策略，在快速排序的早期版本中 最左面或者是最右面的那个元素被选为枢轴，那最坏的情况就会在下面的情况下发生啦：
+
+     1）数组已经是正序（same order）排过序的。 
+     2）数组已经是倒序排过序的。 
+     3）所有的元素都相同（1、2的特殊情况）
  * @ClassName: quickl_sort 
  * @Description: TODO
  * @author: ningbo
  * @date: 2016年11月22日 下午2:06:16
  */
 public class quickl_sort {
-	static void sort(int a[] ,int low,int high){
-		
+	//递归实现
+	static void sort(int a[] ,int low,int high){		
 		if(low<high){
 			int par=partition( a,  low,  high) ;
 			sort( a , par+1, high);
 			sort( a , 0, par-1);
 			
-		}
-		
+		}		
 	}
 	
 	 static int partition(int a[], int low, int high)  
 	 {  
-	     int privotKey = a[low];                             //基准元素  
+	     int privotKey = a[low];      //基准元素  
 	     while(low < high){       
 	    	 //从表的两端交替地向中间扫描  
 	        while(low<high&&a[high]>=privotKey){
@@ -52,6 +57,9 @@ public class quickl_sort {
 	     
 	     return low;  
 	 } 
+	 
+	 
+	 
 
 	public static void main(String[] args) {
 		int b[]={16,3,5,2,8,7,56,12,4,22};
