@@ -4,7 +4,7 @@ package the_method_of_programming.string;
 * @author nebo
 * @E-mail:nebofeng@gmail.com
 * @version creatTime：2017年4月9日 下午1:54:16
-* 类说明:total ordering of string
+* 类说明:total ordering of string 字符串的全排列
 */
 public class TotalOrdering {
 	
