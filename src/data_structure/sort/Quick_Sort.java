@@ -27,11 +27,13 @@ package data_structure.sort;
  * @author: ningbo
  * @date: 2016年11月22日 下午2:06:16
  */
-public class quickl_sort {
+public class Quick_Sort {
 	//递归实现
 	static void sort(int a[] ,int low,int high){		
 		if(low<high){
-			int par=partition( a,  low,  high) ;
+			//int par=partition( a,  low,  high) ;
+			 int par=partition2( a,  low,  high) ;
+
 			sort( a , par+1, high);
 			sort( a , 0, par-1);
 			
@@ -57,6 +59,38 @@ public class quickl_sort {
 	     
 	     return low;  
 	 } 
+	 //使用填充实现,使用填充实现的时候，没有交换。所以每次填充之后
+	 //需要更改索引（++），否则下一次比较时候。相当于上一次比较反过来。
+	 //当然交换方法也可以更改索引。只是不更改也没有关系。因为值已经
+	 //已经交换。所以
+	 static int partition2(int a[]  ,int low,int high){
+		 int privotKey  = a[low];
+		 while(low<high) {
+			 
+		        while(low<high&&a[high]>=privotKey){
+		        	high--;
+		        }
+		        
+		        //需要加上low<high是因为当low = high的时候 。low没有必要再往前移动。这个时候填充停止
+		        if(low<high) {
+		          a[low++]=a[high];
+		        }
+		      
+		       
+		        while(low<high&&a[low]<=privotKey){
+		        	low++;	        	
+		        }
+		        if(low<high) {
+		        	a[high--]=a[low];
+		        }
+		        a[low]=privotKey;
+		        
+		       
+			 
+		 }
+		 
+		 return low;
+	 }
 	 
 	 
 	 
