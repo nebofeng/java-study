@@ -1,4 +1,7 @@
 package data_structure.sort;
+
+import java.util.Stack;
+
 /**
  * 快速排序的思想：
  * 
@@ -91,16 +94,50 @@ public class Quick_Sort {
 		 
 		 return low;
 	 }
+	 /**
+	  * 快速排序的非递归实现
+	  * @param args
+	  */
+	 
+	 public static void quickSort2(int arr[]){
+		 
+		 Stack <Integer>stack = new Stack();
+		 int left =0;
+		 int right = arr.length-1;
+		 
+		 stack.push(left);
+		 stack.push(right);
+		 while(!stack.isEmpty()) {
+			 right=stack.pop();
+			  
+			 left =stack.pop();
+			 if(left<right) {
+				
+				 int par=  partition(arr, left, right);
+				 
+				 stack.push(right);
+				 stack.push(par+1);
+				 
+				 stack.push(par);
+				 stack.push(left);
+				
+				 
+			 }
+			 
+		 }
+		 
+		 
+	 }
 	 
 	 
 	 
 
 	public static void main(String[] args) {
 		int b[]={16,3,5,2,8,7,56,12,4,22};
-		for(int i=0;i<b.length;i++){
-			System.out.println(b[i]);
-		}
-		sort(b,0,9);
+//		for(int i=0;i<b.length;i++){
+//			System.out.println(b[i]);
+//		}
+		quickSort2(b );
 		for(int i=0;i<b.length;i++){
 			System.out.println(b[i]);
 		} 
