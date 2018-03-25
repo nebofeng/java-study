@@ -158,11 +158,11 @@ public class RadixSort {
 	  
 	  public static void main(String[] args) {
 		//int arr[]= {34,58,7,656,07222222,06845,0679};
-		 int arr[]= {34,58,7,656, 97222222, 6845, 679};
+		 int arr[]= {34,58,7,656, 97222222, 6845,6845, 679};
 		 int arr1[]= {12,3,4,8,7,43,0,9,8,6,28,28,5,12};
-		 bucketSort(arr1);
-	//	 sortCore1(arr,7);
-		// System.out.println(Arrays.toString(arr));
+		// bucketSort(arr1);
+	 	 sortCore1(arr,7);
+		  System.out.println(Arrays.toString(arr));
 		// System.out.println(Arrays.toString(arr1));
 
 		 

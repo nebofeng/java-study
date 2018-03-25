@@ -25,7 +25,7 @@ public class Run {
 			PipedOutputStream out=new PipedOutputStream();
 			
 			input.connect(out);
-			
+			 
 			ThreadRead threadRead=new ThreadRead(readData,input);
 			threadRead.start();
 			Thread.sleep(2000);

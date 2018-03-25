@@ -5,12 +5,17 @@ package data_structure.search;
  * @author *** nebo
  * @date   *** 2018年3月13日
  * @email  *** nebofeng@gmail.com
- * @des    *** 查找第n大的数
+ * @des    *** 查找第n大的数(前k大的数。)
  */
 public class SearchN {
 	public static void main(String[] args) {
+		int k=4;
 		int arr[] = {1,3,2,4,6};
-		System.out.println(find(arr,0,arr.length-1,2));
+		System.out.println(find(arr,0,arr.length-1,k));
+		
+		for(int j= arr.length-1;j>arr.length-k;j--){
+			System.out.println(arr[j]);
+		}
 		
 	}
 	

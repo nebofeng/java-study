@@ -176,9 +176,13 @@ public class Main {
 //
 //    }
 	public static void main(String [] args){
-		StringBuffer buffer  = new StringBuffer("aabbcc");
-		buffer.reverse();
-		System.out.println(buffer);
-		String str1="hello"; String str2="he"+ new String("llo"); System.err.println(str1==str2); 
+//		StringBuffer buffer  = new StringBuffer("aabbcc");
+//		buffer.reverse();
+//		System.out.println(buffer);
+//		String str1="hello"; String str2="he"+ new String("llo"); System.err.println(str1==str2); 
+	for(int i=0;i<200;i++) {
+		System.out.println(i*127%4);
+	}
+	 
 	}
 }

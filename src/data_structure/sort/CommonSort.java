@@ -33,7 +33,7 @@ public class CommonSort {
 	 * 分析：与上一种冒泡相比，在于更加灵活的获取了排序的次数。
 	 * 上一种是无论序列是否有序。都需要排序
 	 * 这一种是只对可能无序的元素排序
-	 * @param arr
+	 * @param arr o()
 	 */
 	public static void BubbleSort_1(int arr[]) {
 		int i = arr.length-1;
@@ -47,8 +47,7 @@ public class CommonSort {
 					arr[j+1]=tmp;
 				}
 			}
-			i= pos;
-			 
+			i= pos;		 
 		}
 		 
 	}
@@ -178,7 +177,7 @@ public class CommonSort {
 	 * 
 	 * @param arr
 	 * @des 二分插入排序:思想  对于 0,1,...  n-1个已经有序的序列。第n个数字的摆放位置，通过二分查找的方式来计算。
-	 * 
+	 *  o（n）= n*
 	 */
 	public static void BinarySort(int arr[]) {
 		if(arr==null) {

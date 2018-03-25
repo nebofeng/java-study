@@ -7,7 +7,8 @@ package think_in_java.cp_04;
 				System.out.println("子类构造=");
 			}
 			public static void main(String[] args) {
-				System.out.println("子类执行");
+				StaticInitializationChild c=new StaticInitializationChild();
+			 //System.out.println("子类执行");
 			}
 			static Bowl t4 = new Bowl(6);
 			

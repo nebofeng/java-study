@@ -14,15 +14,16 @@ public class Run {
 		
 		ThreadA a=new ThreadA(myService);
 		a.setName("A");
-		a.start();
-		
 		ThreadB b=new ThreadB(myService);
 		b.setName("b");
-		try {
-			Thread.sleep(50);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		a.start();
+		 
+		
+//		try {
+//			 Thread.sleep(50);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
 //		System.out.println(""+System.currentTimeMillis());
 //		for(int i=1;i<=1000000000;i++){
 //			for(int j=1;j<=1000;j++){
