@@ -1,4 +1,4 @@
-package java_concurrency_in_practice.cp05.c5_16;
+package java-concurrency_in_practice.cp05.c5_16;
 
 import java.util.HashMap;
 import java.util.Map;

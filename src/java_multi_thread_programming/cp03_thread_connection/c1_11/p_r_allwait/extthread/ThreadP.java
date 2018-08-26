@@ -1,7 +1,7 @@
 
-package java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.extthread;
+package java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.extthread;
 
-import java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.entity.P;
+import java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.entity.P;
 
 /**
 * @author nebo

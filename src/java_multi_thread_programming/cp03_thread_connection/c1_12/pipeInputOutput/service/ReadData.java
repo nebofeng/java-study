@@ -1,5 +1,5 @@
 
-package java_multi_thread_programming.cp03_thread_connection.c1_12.pipeInputOutput.service;
+package java-multi_thread_programming.cp03_thread_connection.c1_12.pipeInputOutput.service;
 import java.io.IOException;
 import java.io.PipedInputStream;;
 

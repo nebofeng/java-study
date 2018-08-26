@@ -1,5 +1,5 @@
 
-package java_multi_thread_programming.cp05.c1_5;
+package java-multi_thread_programming.cp05.c1_5;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

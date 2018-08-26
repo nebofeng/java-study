@@ -1,8 +1,8 @@
 
-package java_multi_thread_programming.cp04.c1_4.test;
+package java-multi_thread_programming.cp04.c1_4.test;
 
-import java_multi_thread_programming.cp04.c1_4.extthread.ThreadA;
-import java_multi_thread_programming.cp04.c1_4.service.MyService;
+import java-multi_thread_programming.cp04.c1_4.extthread.ThreadA;
+import java-multi_thread_programming.cp04.c1_4.service.MyService;
 
 /**
 * @author nebo

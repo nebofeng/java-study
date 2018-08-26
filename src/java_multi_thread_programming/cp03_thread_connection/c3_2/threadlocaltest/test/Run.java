@@ -1,9 +1,9 @@
 
-package java_multi_thread_programming.cp03_thread_connection.c3_2.threadlocaltest.test;
+package java-multi_thread_programming.cp03_thread_connection.c3_2.threadlocaltest.test;
 
-import java_multi_thread_programming.cp03_thread_connection.c3_2.threadlocaltest.extthread.ThreadA;
-import java_multi_thread_programming.cp03_thread_connection.c3_2.threadlocaltest.extthread.ThreadB;
-import java_multi_thread_programming.cp03_thread_connection.c3_2.threadlocaltest.tools.Tools;
+import java-multi_thread_programming.cp03_thread_connection.c3_2.threadlocaltest.extthread.ThreadA;
+import java-multi_thread_programming.cp03_thread_connection.c3_2.threadlocaltest.extthread.ThreadB;
+import java-multi_thread_programming.cp03_thread_connection.c3_2.threadlocaltest.tools.Tools;
 
 /**
 * @author nebo

@@ -1,5 +1,5 @@
 
-package java_multi_thread_programming.cp04.c1_4.service;
+package java-multi_thread_programming.cp04.c1_4.service;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

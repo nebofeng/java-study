@@ -1,5 +1,5 @@
 
-package java_multi_thread_programming.cp02.c2_7;
+package java-multi_thread_programming.cp02.c2_7;
 
 import java.util.ArrayList;
 import java.util.List;

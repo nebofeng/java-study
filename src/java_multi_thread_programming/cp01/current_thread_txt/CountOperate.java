@@ -1,4 +1,4 @@
-package java_multi_thread_programming.cp01.current_thread_txt;
+package java-multi_thread_programming.cp01.current_thread_txt;
 
 public class CountOperate  extends Thread{
     

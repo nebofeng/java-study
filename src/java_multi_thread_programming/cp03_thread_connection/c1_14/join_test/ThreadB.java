@@ -1,5 +1,5 @@
 
-package java_multi_thread_programming.cp03_thread_connection.c1_14.join_test;
+package java-multi_thread_programming.cp03_thread_connection.c1_14.join_test;
 /**
 * @author nebo
 * @E-mail:nebofeng@gmail.com

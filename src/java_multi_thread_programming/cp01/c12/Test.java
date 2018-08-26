@@ -1,4 +1,4 @@
-package java_multi_thread_programming.cp01.c12;
+package java-multi_thread_programming.cp01.c12;
 
 public class Test {
 	public static void main(String[] args) {

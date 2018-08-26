@@ -1,5 +1,5 @@
 
-package java_concurrency_in_practice.cp07_c7_2;
+package java-concurrency_in_practice.cp07_c7_2;
 
 import java.math.BigInteger;
 import java.util.concurrent.BlockingQueue;

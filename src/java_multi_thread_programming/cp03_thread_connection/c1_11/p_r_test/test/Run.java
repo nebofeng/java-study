@@ -1,10 +1,10 @@
 
-package java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.test;
+package java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.test;
 
-import java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.entity.C;
-import java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.entity.P;
-import java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.extthread.ThreadC;
-import java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.extthread.ThreadP;
+import java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.entity.C;
+import java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.entity.P;
+import java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.extthread.ThreadC;
+import java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.extthread.ThreadP;
 
 /**
 * @author nebo

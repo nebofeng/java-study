@@ -1,5 +1,5 @@
 
-package java_multi_thread_programming.cp07.c4.formatError.extthread;
+package java-multi_thread_programming.cp07.c4.formatError.extthread;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

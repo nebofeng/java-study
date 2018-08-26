@@ -1,4 +1,4 @@
-package java_multi_thread_programming.cp03_thread_connection.twothreadtransdata;
+package java-multi_thread_programming.cp03_thread_connection.twothreadtransdata;
 
 public class Left extends Thread {
 	int n = 0;

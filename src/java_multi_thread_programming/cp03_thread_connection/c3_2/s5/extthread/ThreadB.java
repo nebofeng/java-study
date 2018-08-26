@@ -1,9 +1,9 @@
 
-package java_multi_thread_programming.cp03_thread_connection.c3_2.s5.extthread;
+package java-multi_thread_programming.cp03_thread_connection.c3_2.s5.extthread;
 
 import java.util.Date;
 
-import java_multi_thread_programming.cp03_thread_connection.c3_2.s5.tools.Tools;
+import java-multi_thread_programming.cp03_thread_connection.c3_2.s5.tools.Tools;
 
 /**
 * @author nebo

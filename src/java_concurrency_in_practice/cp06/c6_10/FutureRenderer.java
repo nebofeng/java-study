@@ -1,5 +1,5 @@
 //
-//package java_concurrency_in_practice.cp06.c6_10;
+//package java-concurrency_in_practice.cp06.c6_10;
 //
 //import java.util.ArrayList;
 //import java.util.List;

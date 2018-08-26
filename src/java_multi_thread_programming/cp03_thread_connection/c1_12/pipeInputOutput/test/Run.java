@@ -1,14 +1,14 @@
 
-package java_multi_thread_programming.cp03_thread_connection.c1_12.pipeInputOutput.test;
+package java-multi_thread_programming.cp03_thread_connection.c1_12.pipeInputOutput.test;
 
 import java.io.IOException;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 
-import java_multi_thread_programming.cp03_thread_connection.c1_12.pipeInputOutput.extthread.ThreadRead;
-import java_multi_thread_programming.cp03_thread_connection.c1_12.pipeInputOutput.extthread.ThreadWrite;
-import java_multi_thread_programming.cp03_thread_connection.c1_12.pipeInputOutput.service.ReadData;
-import java_multi_thread_programming.cp03_thread_connection.c1_12.pipeInputOutput.service.WriteData;
+import java-multi_thread_programming.cp03_thread_connection.c1_12.pipeInputOutput.extthread.ThreadRead;
+import java-multi_thread_programming.cp03_thread_connection.c1_12.pipeInputOutput.extthread.ThreadWrite;
+import java-multi_thread_programming.cp03_thread_connection.c1_12.pipeInputOutput.service.ReadData;
+import java-multi_thread_programming.cp03_thread_connection.c1_12.pipeInputOutput.service.WriteData;
 
 /**
 * @author nebo

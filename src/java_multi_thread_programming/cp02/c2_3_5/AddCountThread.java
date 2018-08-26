@@ -1,5 +1,5 @@
 
-package java_multi_thread_programming.cp02.c2_3_5;
+package java-multi_thread_programming.cp02.c2_3_5;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

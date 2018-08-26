@@ -1,5 +1,5 @@
 
-package java_multi_thread_programming.cp03_thread_connection.c3_2.threadlocaltest.tools;
+package java-multi_thread_programming.cp03_thread_connection.c3_2.threadlocaltest.tools;
 /**
 * @author nebo
 * @E-mail:nebofeng@gmail.com

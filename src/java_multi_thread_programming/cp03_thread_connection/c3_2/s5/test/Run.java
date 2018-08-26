@@ -1,8 +1,8 @@
 
-package java_multi_thread_programming.cp03_thread_connection.c3_2.s5.test;
+package java-multi_thread_programming.cp03_thread_connection.c3_2.s5.test;
 
-import java_multi_thread_programming.cp03_thread_connection.c3_2.s5.extthread.ThreadA;
-import java_multi_thread_programming.cp03_thread_connection.c3_2.s5.extthread.ThreadB;
+import java-multi_thread_programming.cp03_thread_connection.c3_2.s5.extthread.ThreadA;
+import java-multi_thread_programming.cp03_thread_connection.c3_2.s5.extthread.ThreadB;
 
 /**
 * @author nebo

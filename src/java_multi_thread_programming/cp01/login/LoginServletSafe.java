@@ -1,5 +1,5 @@
 
-package java_multi_thread_programming.cp01.login;
+package java-multi_thread_programming.cp01.login;
 /**
 * @author nebo
 * @E-mail:nebofeng@gmail.com

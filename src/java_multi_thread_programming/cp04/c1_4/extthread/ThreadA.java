@@ -1,7 +1,7 @@
 
-package java_multi_thread_programming.cp04.c1_4.extthread;
+package java-multi_thread_programming.cp04.c1_4.extthread;
 
-import java_multi_thread_programming.cp04.c1_4.service.MyService;
+import java-multi_thread_programming.cp04.c1_4.service.MyService;
 
 /**
 * @author nebo

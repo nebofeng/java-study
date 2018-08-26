@@ -1,7 +1,7 @@
 
-package java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.extthread;
+package java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.extthread;
 
-import java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.entity.C;
+import java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_test.entity.C;
 
 /**
 * @author nebo

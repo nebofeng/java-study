@@ -1,5 +1,5 @@
 
-package java_multi_thread_programming.cp06.c4.singletonandserializable.test;
+package java-multi_thread_programming.cp06.c4.singletonandserializable.test;
 
 import java.io.ObjectStreamException;
 import java.io.Serializable;

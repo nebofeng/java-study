@@ -1,5 +1,5 @@
 
-package java_multi_thread_programming.cp07.c4.stop;
+package java-multi_thread_programming.cp07.c4.stop;
 /**
 * @author nebo
 * @E-mail:nebofeng@gmail.com

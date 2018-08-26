@@ -1,5 +1,5 @@
 
-package java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.entity;
+package java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.entity;
 /**
 * @author nebo
 * @E-mail:nebofeng@gmail.com

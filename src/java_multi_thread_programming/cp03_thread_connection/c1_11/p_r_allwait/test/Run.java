@@ -1,10 +1,10 @@
 
-package java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.test;
+package java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.test;
 
-import java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.entity.C;
-import java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.entity.P;
-import java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.extthread.ThreadC;
-import java_multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.extthread.ThreadP;
+import java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.entity.C;
+import java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.entity.P;
+import java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.extthread.ThreadC;
+import java-multi_thread_programming.cp03_thread_connection.c1_11.p_r_allwait.extthread.ThreadP;
 
 /**
 * @author nebo
