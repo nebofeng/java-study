@@ -1,4 +1,6 @@
-package java-concurrency_in_practice.cp05.c5_16;
+package  book.java_concurrency_in_practice.cp05.c5_16;
+
+
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,11 +10,11 @@ import java.util.Map;
  * @E-mail:nebofeng@gmail.com
  * @version creatTime：2017年3月6日 下午4:06:19 类说明
  */
-public class Memoizer1<A, V> implements Computable<A, V> {
+public class Memoizer1<A, V> implements  book.java_concurrency_in_practice.cp05.c5_16.Computable<A, V> {
 	private final Map<A, V>			cache	= new HashMap<A, V>();
-	private final Computable<A, V>	c;
+	private final  book.java_concurrency_in_practice.cp05.c5_16.Computable<A, V> c;
 
-	public Memoizer1(Computable<A, V> c) {
+	public Memoizer1( book.java_concurrency_in_practice.cp05.c5_16.Computable<A, V> c) {
 		this.c = c;
 	}
 	

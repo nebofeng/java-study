@@ -1,5 +1,7 @@
 
-package java-concurrency_in_practice.cp05.c5_16;
+package  book.java_concurrency_in_practice.cp05.c5_16;
+
+
 
 import java.util.Map;
 import java.util.concurrent.Callable;
@@ -14,13 +16,13 @@ import java.util.concurrent.FutureTask;
 * @version creatTime：2017年3月6日 下午4:30:50
 * 类说明
 */
-public class Memoizer3<A, V> implements Computable<A,V> {
+public class Memoizer3<A, V> implements  book.java_concurrency_in_practice.cp05.c5_16.Computable<A,V> {
 
 	private final Map<A,Future<V>> cache=new ConcurrentHashMap<A,Future<V>>();
-	private final Computable<A,V> c;
+	private final  book.java_concurrency_in_practice.cp05.c5_16.Computable<A,V> c;
 	
 	
-	public Memoizer3(Computable<A,V> c) {
+	public Memoizer3( book.java_concurrency_in_practice.cp05.c5_16.Computable<A,V> c) {
 		this.c=c;
 	}
 	public V compute(final A arg) throws InterruptedException {

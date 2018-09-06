@@ -1,5 +1,7 @@
 
-package java-concurrency_in_practice.cp05.c5_16;
+package  book.java_concurrency_in_practice.cp05.c5_16;
+
+
 
 import java.math.BigInteger;
 
@@ -11,7 +13,7 @@ import java.math.BigInteger;
  * @param <A>
  * @param <V>
 */
-public class ExpensiveFunction  implements Computable<String , BigInteger>{
+public class ExpensiveFunction  implements  book.java_concurrency_in_practice.cp05.c5_16.Computable<String , BigInteger> {
 
 	
 	@Override
