@@ -1,4 +1,4 @@
-package pers.nebo;
+package pers.nebo.test;
 
 /**
  * 测试java分割
