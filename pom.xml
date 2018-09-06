@@ -3,7 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.nebo.java-study</groupId>
 	<artifactId>java-study</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<resources>
@@ -25,8 +26,11 @@
 			</plugin>
 		</plugins>
 	</build>
+    <modules>
+        <module>java-thread</module>
+    </modules>
 
-	<dependencies>
+    <dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
