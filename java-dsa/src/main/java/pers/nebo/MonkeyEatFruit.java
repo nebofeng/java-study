@@ -1,5 +1,5 @@
 
-package data_structure;
+package pers.nebo;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package data_structure.sort;
+package pers.nebo.sort;
 
 import java.util.Stack;
 
