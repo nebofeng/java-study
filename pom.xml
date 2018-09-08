@@ -5,6 +5,15 @@
 	<artifactId>java-study</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
+
+	<modules>
+		<module>java-thread</module>
+		<module>java-dsa</module>
+		<module>java-exception</module>
+		<module>java-lambda</module>
+		<module>java-io</module>
+		<module>java-web</module>
+	</modules>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<resources>
@@ -26,18 +35,7 @@
 			</plugin>
 		</plugins>
 	</build>
-    <modules>
-        <module>java-thread</module>
-    </modules>
-
-    <dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.0</version>
-			<scope>test</scope>
-		</dependency>
 
 
-	</dependencies>
+
 </project>
