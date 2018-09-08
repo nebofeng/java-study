@@ -7,7 +7,5 @@ package pers.nebo.javaexcel;
 public class ReadExcel {
 	public static void main(String[] args) {
 		FileUtils fileUtils = new FileUtils("l_test_log.xlsx");
-
-
 	}
 }

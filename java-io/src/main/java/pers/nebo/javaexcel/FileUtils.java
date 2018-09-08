@@ -22,9 +22,7 @@ public class FileUtils {
 
 		try {
 			readXlsx(filePath);
-
-
-		} catch (IOException e) {
+    	} catch (IOException e) {
 			e.printStackTrace();
 		}
 
@@ -45,7 +43,6 @@ public class FileUtils {
 		}
 		wb.close();
 		//可以.trim()
-
 	}
 
 }
