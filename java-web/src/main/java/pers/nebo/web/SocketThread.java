@@ -29,19 +29,23 @@ public class SocketThread  extends Thread{
 				line = input.readLine();
 				if(line!=null){
 					String method= line.substring(0,4).trim();
+					System.out.println("====="+method);
 					if("get".equalsIgnoreCase(method)){
-						//get 方法
+			 			//get 方法
+						System.out.println("===INIT");
 						output.write("get method");
+
+
 						output.flush();
 					}else {
 						output.write("not get mothod");
 					}
 				}
-				output.flush();
+			//	output.flush();
 				//close stream and socket
 				input.close();
 				output.close();
-				socket.close();
+//				socket.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

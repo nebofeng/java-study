@@ -20,55 +20,23 @@ public class HttpServer {
 
 	public static void main(String[] args) {
 		try {
-
-			ServerSocket	server = new ServerSocket(8080);
-
-
+			ServerSocket server = new ServerSocket(8080);
 			while (1 == 1) {
 				// 接收客户端请求数据
 				Socket socket = null;
 				try {
+					//accept client  socket :
 					socket = server.accept();
+					new SocketThread(socket).start();
+					//这里启动一个线程处理这个socket；
+
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
-
-
-				// 读取
-				BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-				// 写入
-				BufferedWriter output = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-
-				String line = null;
-				try {
-					line = input.readLine();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-
-				while (line != null) {
-					System.out.println(line);
-					output.write("Success!!"  +"\r\n");
-					try {
-						output.flush();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-					line = input.readLine();
-					return;
-				}
-				//必须关闭
-				input.close();
-				output.close();
-				socket.close();
-
 			}
-	  }catch(IOException e){
-			e.printStackTrace();
-	}
+		}catch(IOException e){
+				e.printStackTrace();
+			}
+		}
+	 }
 
-
-	}
-
-
-}

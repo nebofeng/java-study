@@ -16,20 +16,23 @@ public class HttpClient {
 			//建立连接
 			Socket client = new Socket("127.0.0.1",8080);
 			OutputStream out = client.getOutputStream();
-			BufferedReader in  = new BufferedReader(new InputStreamReader(client.getInputStream(),"utf-8"));
+
 
 			out.write("GET 127.0.0.1:8080 HTTP/1.1\\r\\nHost: www.baidu.com\\r\\n\\r\\n".getBytes());
             out.flush();
+            client.shutdownOutput();
+
+			BufferedReader in  = new BufferedReader(new InputStreamReader(client.getInputStream(),"utf-8"));
 			int d=-1;
+			while (((d=in.read()))!=-1){
+				System.out.println((char) d);
+			}
 
 			System.out.println(in.readLine());
 			in.close();
 			out.close();
-//			while (((d=in.read()))!=-1){
-//				System.out.println((char) d);
-//			}
-
 			client.close();
+
 //			SocketAddress dst= new InetSocketAddress("127.0.0.1",8080);
 //			client.connect(dst);
 //			InputStream inputStream = client.getInputStream();
