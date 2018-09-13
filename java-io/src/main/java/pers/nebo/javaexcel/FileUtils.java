@@ -10,7 +10,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * 解析，获取，hdfs目录文件中的参数。
+ * 解析，获取，Excel 文件中的参数。
  */
 public class FileUtils {
 	public static final Log LOG = LogFactory.getLog(FileUtils.class);

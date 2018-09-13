@@ -1,4 +1,4 @@
-package pers.nebo.web;
+package pers.nebo.web.webhandler;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -10,30 +10,48 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
- * @auther nebofeng@gmail.com
- * @date 2018/9/11 10:19
- * @des: 阿里云 http请求 。返回 竞价实例的详细信息
- *
+ * @auther fnb
+ * @date 2018/9/13 16:32
  */
-public class AliYunHttp {
+public class HttpUtils {
+
 	/**
-	 * get请求，参数拼接在地址上
-	 *
-	 * @param url 请求地址加参数
-	 * @return 响应
+	 * 根据url与参数 ，发出请求。并解析数据封装到 传入的mapData ,以及返回 的StringBuffer对象中。
+	 * @param url
+	 * @param parameters
+	 * @return
 	 */
-	public String get(String url) {
+	public static String get(String url, Map parameters) {
 		String result = null;
 		CloseableHttpClient httpClient = HttpClients.createDefault();
-		HttpGet get = new HttpGet(url);
+		StringBuilder newUrl = new StringBuilder(url);
+		Iterator<Map.Entry<String, String>> entries = parameters.entrySet().iterator();
+
+		while (entries.hasNext()) {
+
+			Map.Entry<String, String> entry = entries.next();
+			if (!entry.getKey().equals("Action")) {
+				newUrl.append("&" + entry.getKey() + "=" + entry.getValue());
+
+			}
+
+		}
+		System.out.println(newUrl);
+		HttpGet get = new HttpGet(String.valueOf(newUrl));
 		CloseableHttpResponse response = null;
 		try {
 			response = httpClient.execute(get);
 			if (response != null && response.getStatusLine().getStatusCode() == 200) {
 				HttpEntity entity = response.getEntity();
 				result = entityToString(entity);
+			} else {
+				HttpEntity entity = response.getEntity();
+
+				System.out.println(entityToString(entity));
 			}
 			return result;
 		} catch (IOException e) {
@@ -50,8 +68,13 @@ public class AliYunHttp {
 		}
 		return null;
 	}
-
-	private String entityToString(HttpEntity entity) throws IOException {
+	/**
+	 * 解析返回的HttpEntity
+	 * @param entity
+	 * @return
+	 * @throws IOException
+	 */
+	private static String entityToString(HttpEntity entity) throws IOException {
 		String result = null;
 		if (entity != null) {
 			long lenth = entity.getContentLength();
@@ -70,5 +93,4 @@ public class AliYunHttp {
 		}
 		return result;
 	}
-     //请求参数： 	https://ecs.aliyuncs.com/?Action=DescribeInstances&RegionId=cn-hangzhou&<公共请求参数>
 }
