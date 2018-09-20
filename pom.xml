@@ -13,7 +13,8 @@
 		<module>java-lambda</module>
 		<module>java-io</module>
 		<module>java-web</module>
-	</modules>
+        <module>java-container</module>
+    </modules>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<resources>
