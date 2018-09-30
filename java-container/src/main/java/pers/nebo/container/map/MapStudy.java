@@ -2,7 +2,10 @@ package pers.nebo.container.map;
 
 import sun.reflect.generics.tree.Tree;
 
+import java.io.Serializable;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * @auther nebofeng@gmail.com
@@ -33,5 +36,14 @@ public class MapStudy {
 	 */
 
 	 TreeMap treeMap;
+
+
+	/**
+	 class ConcurrentHashMap<K,V> extends AbstractMap<K,V> implements ConcurrentMap<K,V>, Serializable
+	 */
+	ConcurrentHashMap concurrentHashMap;
+
+
+
 
 }
