@@ -15,7 +15,8 @@
 		<module>java-web</module>
         <module>java-designmode</module>
         <module>java-container</module>
-	</modules>>
+        <module>java-jvm</module>
+    </modules>>
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
