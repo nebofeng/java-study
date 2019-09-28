@@ -27,6 +27,10 @@ public class MemoryDistribute {
 
          -Xmn10M
          指定新生代内存大小
+         然后定义 3个 2m 一个4m的 对象。 会发生 gc 因为 对象分配不是连续的。 所以eden区域需要gc 整理内存。
+
+         full gc 时间更长。比gc发生更少。
+
          */
 
     }
