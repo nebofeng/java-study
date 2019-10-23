@@ -17,18 +17,19 @@
         <module>java-container</module>
         <module>java-jvm</module>
         <module>java-base</module>
-    </modules>>
+		<module>java-algorithm</module>
+	</modules>>
 
 	<build>
-		<sourceDirectory>src</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>src</directory>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
-		</resources>
+<!--		<sourceDirectory>src</sourceDirectory>-->
+<!--		<resources>-->
+<!--			<resource>-->
+<!--				<directory>src</directory>-->
+<!--				<excludes>-->
+<!--					<exclude>**/*.java</exclude>-->
+<!--				</excludes>-->
+<!--			</resource>-->
+<!--		</resources>-->
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
