@@ -1,7 +1,6 @@
 
 package pers.nebo.leetcode;
 
-import org.junit.Test;
 
 /**
 * @author nebo
@@ -9,7 +8,7 @@ import org.junit.Test;
 * @version creatTime：2017年3月16日 下午6:23:43
 * 类说明
 */
-public class TwoNumberS {
+public class Q1_TwoNumber {
 	//n的方
 	public void twonumber(int[] array,int s){
 		for(int i=0;i<array.length;i++){
@@ -48,10 +47,5 @@ public class TwoNumberS {
 		
 	}
 	
-	@Test
-	public void test(){
-		int[] array={1,3,4,5,8,9,11};
-		int s=13;
-		twonumber2(array,s);
-	}
+
 }
