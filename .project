@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>java-study</name>
+	<comment></comment>
+	<projects>
+		<project>java-base</project>
+		<project>java-container</project>
+		<project>java-designmode</project>
+		<project>java-dsa</project>
+		<project>java-exception</project>
+		<project>java-io</project>
+		<project>java-jvm</project>
+		<project>java-lambda</project>
+		<project>java-thread</project>
+		<project>java-web</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.m2e.core.maven2Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.nebo.java-study</groupId>
 	<artifactId>java-study</artifactId>
-    <packaging>pom</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<version>0.0.1-SNAPSHOT</version>
 
 	<modules>
 		<module>java-thread</module>
@@ -13,11 +13,11 @@
 		<module>java-lambda</module>
 		<module>java-io</module>
 		<module>java-web</module>
-        <module>java-designmode</module>
-        <module>java-container</module>
-        <module>java-jvm</module>
-        <module>java-base</module>
-    </modules>
+		<module>java-designmode</module>
+		<module>java-container</module>
+		<module>java-jvm</module>
+		<module>java-base</module>
+	</modules>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -28,15 +28,15 @@
 
 
 	<build>
-<!--		<sourceDirectory>src</sourceDirectory>-->
-<!--		<resources>-->
-<!--			<resource>-->
-<!--				<directory>src</directory>-->
-<!--				<excludes>-->
-<!--					<exclude>**/*.java</exclude>-->
-<!--				</excludes>-->
-<!--			</resource>-->
-<!--		</resources>-->
+		<!--		<sourceDirectory>src</sourceDirectory>-->
+		<!--		<resources>-->
+		<!--			<resource>-->
+		<!--				<directory>src</directory>-->
+		<!--				<excludes>-->
+		<!--					<exclude>**/*.java</exclude>-->
+		<!--				</excludes>-->
+		<!--			</resource>-->
+		<!--		</resources>-->
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
