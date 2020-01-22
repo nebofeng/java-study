@@ -1,6 +1,9 @@
 .idea
 */target
+*/.settings
 *.iml
 /out/
 target
 /*/*.iml
+/bin/
+
