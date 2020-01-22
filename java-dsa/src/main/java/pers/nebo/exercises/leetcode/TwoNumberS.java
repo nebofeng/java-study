@@ -1,5 +1,5 @@
 
-package leetcode;
+package pers.nebo.exercises.leetcode;
 
 import org.junit.Test;
 

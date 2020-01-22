@@ -1,4 +1,4 @@
-package leetcode.weekly_contest_31;
+package pers.nebo.exercises.leetcode.weekly_contest_31;
 
 /**
  * @author nebo

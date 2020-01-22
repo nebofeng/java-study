@@ -1,5 +1,5 @@
 
-package leetcode;
+package pers.nebo.exercises.leetcode;
 /**
 * @author nebo
 * @E-mail:nebofeng@gmail.com
