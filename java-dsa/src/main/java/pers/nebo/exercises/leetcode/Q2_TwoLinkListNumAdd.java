@@ -1,4 +1,4 @@
-package pers.nebo.leetcode;
+package pers.nebo.exercises.leetcode;
 
 import pers.nebo.common.ListNode;
 

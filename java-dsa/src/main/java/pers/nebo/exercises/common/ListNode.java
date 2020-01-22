@@ -1,4 +1,4 @@
-package pers.nebo.common;
+package pers.nebo.exercises.common;
 
 //* Definition for singly-linked list.
 public class ListNode {
