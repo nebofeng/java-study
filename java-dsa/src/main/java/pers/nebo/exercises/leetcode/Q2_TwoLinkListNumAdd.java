@@ -1,6 +1,7 @@
 package pers.nebo.exercises.leetcode;
 
-import pers.nebo.common.ListNode;
+
+import pers.nebo.exercises.common.ListNode;
 
 public class Q2_TwoLinkListNumAdd {
     public static void main(String[] args) {

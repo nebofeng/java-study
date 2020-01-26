@@ -1,6 +1,7 @@
 package pers.nebo.exercises.niuke.jianzhiofficer;
 
-import Public_Class.ListNode;
+
+import pers.nebo.exercises.common.ListNode;
 
 /*
 问题描述：有两个链表都是从小到大排好顺序的，要求将两个链表合并，并且也是按照顺序
@@ -16,7 +17,7 @@ import Public_Class.ListNode;
 */
 public class Merge_linked {
 	
-	    public ListNode Merge(ListNode list1,ListNode list2) {
+	    public ListNode Merge(ListNode list1, ListNode list2) {
 //	        //新建一个头节点，用来存合并的链表。
 //	        ListNode head=new ListNode(-1);
 //	        head.next=null;

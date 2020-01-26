@@ -1,6 +1,7 @@
 package pers.nebo.exercises.niuke.jianzhiofficer;
 
-import Public_Class.ListNode;
+
+import pers.nebo.exercises.common.ListNode;
 
 public class FindKthToTail {
 	public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class FindKthToTail {
 
 class SolutionFindKthToTail {
 	
-    public ListNode FindKthToTail(ListNode head,int k) {
+    public ListNode FindKthToTail(ListNode head, int k) {
     	int count=0;
     	ListNode listNode=head;
     	if(head==null){
