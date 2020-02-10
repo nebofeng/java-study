@@ -30,4 +30,42 @@ package pers.nebo.exercises.leetcode.topninterview;
  https://leetcode-cn.com/problems/container-with-most-water/solution/sheng-zui-duo-shui-de-rong-qi-by-leetcode/
  */
 public class Q11_ContainerWithMostWater {
+
+    public static void main(String[] args) {
+
+     int [] height={1,8,6,2,5,4,8,3,7};
+     System.out.println(getMost(height));
+
+
+    }
+
+    /**
+     *
+     * @param height
+     * @return
+     * 从两边开始计算
+     *由于面积取决于边长短的那一端假设为m，所以要想得到比当前更大的面积，边长短的那一端必须舍弃，
+     * 因为如果不舍弃，高最大就是m，而随着指针的移动宽会一直减小，因此面积只会越来越小。
+     */
+    public static  int getMost(int[] height){
+
+        int result=0;
+        int left=0;
+        int right=height.length-1;
+        while(left<right){
+            int tmp=(right-left)*Math.min(height[left],height[right]);
+            if(height[left]>height[right]){
+                right--;
+            }else{
+                left++;
+            }
+            result=Math.max(result,tmp);
+
+        }
+        return  result;
+
+    }
+
+
+
 }
