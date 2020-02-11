@@ -1,5 +1,8 @@
 package pers.nebo.exercises.leetcode.topninterview;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @ author fnb
  * @ email nebofeng@gmail.com
@@ -57,6 +60,60 @@ package pers.nebo.exercises.leetcode.topninterview;
 
  */
 public class Q13_RomanToInteger {
+    public static void main(String[] args) {
+
+        System.out.println(getResult("MCMXCIV"));
 
 
+
+
+
+
+
+    }
+
+
+    public static  int  getResult(String source ){
+
+        //先初始化 数值
+        Map<String,Integer> map = new HashMap();
+        map.put("I",1);
+        map.put("V",5);
+        map.put("X",10);
+        map.put("L",50);
+        map.put("C",100);
+        map.put("D",500);
+        map.put("M",1000);
+        map.put("IV",4);
+        map.put("IX",9);
+        map.put("XL",40);
+        map.put("XC",90);
+        map.put("CD",400);
+        map.put("CM",900);
+
+        int result =0 ;
+        for(int i=0;i<source.length();){
+            //获取 当前的char
+            if(i<source.length()-1){
+                if(map.containsKey(source.substring(i,i+2))){
+                    result=result+map.get(source.substring(i,i+2));
+                    i=i+2;
+                }else{
+                    result=result+map.get(source.substring(i,i+1));
+                    i=i+1;
+
+                }
+
+
+            }else{
+                result=result+map.get(source.substring(i,i+1));
+                i=i+1;
+            }
+
+
+        }
+
+        return  result;
+
+    }
 }
