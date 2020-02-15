@@ -1,0 +1,76 @@
+package pers.nebo.exercises.leetcode.topninterview;
+
+/**
+ * @ author fnb
+ * @ email nebofeng@gmail.com
+ * @ date  2020/2/15
+ * @ des :
+ *
+ *
+ *
+ 编写一个函数来查找字符串数组中的最长公共前缀。
+
+ 如果不存在公共前缀，返回空字符串 ""。
+
+ 示例 1:
+
+ 输入: ["flower","flow","flight"]
+ 输出: "fl"
+ 示例 2:
+
+ 输入: ["dog","racecar","car"]
+ 输出: ""
+ 解释: 输入不存在公共前缀。
+ 说明:
+
+ 所有输入只包含小写字母 a-z 。
+
+ 来源：力扣（LeetCode）
+ 链接：https://leetcode-cn.com/problems/longest-common-prefix
+ 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+ */
+public class Q14_LongestCommonPrefix {
+
+    public static void main(String[] args) {
+
+        String[] strs={"flower","flow","flight"};
+        String[] s1= {"dog","racecar","car"};
+        System.out.println(longestCommonPrefix(s1));
+    }
+
+    public static  String longestCommonPrefix(String[] strs) {
+        StringBuffer sb=new StringBuffer();
+        if(strs.length==1){
+            return  strs[0];
+        }
+
+        String tmp=strs[0];
+        for(int i=1;i<strs.length;i++){
+            tmp=getCommmon(tmp,strs[i]);
+            if(tmp.length()==0){
+                return  "";
+            }
+        }
+        return  new String(tmp);
+    }
+
+
+    public  static  String getCommmon(String s1,String s2){
+        if(s1.length()>s2.length()){
+            return  getCommmon(s2,s1);
+        }
+        StringBuffer tmp=new StringBuffer();
+        for(int i=0;i<s1.length();i++){
+            if(s1.charAt(i)==s2.charAt(i)){
+                tmp.append(s1.charAt(i));
+            }else{
+                break;
+            }
+        }
+
+        return  new String(tmp);
+
+    }
+
+
+}
