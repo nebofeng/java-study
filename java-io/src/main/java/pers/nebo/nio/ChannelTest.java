@@ -36,9 +36,9 @@ public class ChannelTest {
 
             //进行内存映射文件
 
-            MappedByteBuffer inMappedBuff=inChannel.map(FileChannel.MapMode.READ_ONLY,0,inChannel.size());
+            MappedByteBuffer inMappedBuff=inChannel.map(FileChannel.MapMode.READ_ONLY,0,1024);
 
-            MappedByteBuffer outMappedBuff=outChannel.map(FileChannel.MapMode.READ_WRITE,0,inChannel.size());
+            MappedByteBuffer outMappedBuff=outChannel.map(FileChannel.MapMode.READ_WRITE,0,1024);
 
             //对缓冲区域进行数据的读写操作
 
