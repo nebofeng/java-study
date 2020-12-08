@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
+import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
@@ -65,9 +66,41 @@ public class BlockingNIOTest {
     public  void server(){
         //1. 获取通道
 
-        //2. 绑定端口
 
-        //
+        try {
+            ServerSocketChannel serverSocketChannel=  ServerSocketChannel.open();
+
+            //2. 绑定端口
+
+            serverSocketChannel.bind(new InetSocketAddress(9898));
+
+            //3. 等待客户端连接，当连接测成功，就会得到一个连接通道
+
+            SocketChannel socketChannel=serverSocketChannel.accept();
+
+            //4. 创建缓冲区
+
+            ByteBuffer buffer=ByteBuffer.allocate(1024);
+
+            FileChannel fileChannel=FileChannel.open(Paths.get("./test"),StandardOpenOption.WRITE,StandardOpenOption.CREATE);
+            //5.接收客户端的数据，并且存储到本地
+            while (socketChannel.read(buffer)!=-1){
+                buffer.flip();
+                fileChannel.write(buffer);
+                buffer.clear();
+
+            }
+
+            fileChannel.close();
+            socketChannel.close();
+            buffer.clear();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
     }
 
 
