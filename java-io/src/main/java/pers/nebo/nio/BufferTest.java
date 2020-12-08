@@ -14,6 +14,18 @@ public class BufferTest {
      * 直接缓冲区：  通过 allocateDirect方法分配缓冲区 ，将缓冲区建立在物理内存中， 效率更高。
      */
 
+    @Test
+    public  void test3(){
+        //分配直接缓冲区
+        ByteBuffer buffer=ByteBuffer.allocateDirect(1024);
+
+        ByteBuffer buffer1=ByteBuffer.allocate(1024);
+        System.out.println(buffer.isDirect());
+        System.out.println(buffer1.isDirect());
+
+
+    }
+
 
     @Test
     public  void test2(){
