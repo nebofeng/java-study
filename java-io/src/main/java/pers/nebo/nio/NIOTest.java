@@ -13,6 +13,7 @@ import java.nio.channels.SocketChannel;
 import java.security.PublicKey;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class NIOTest {
 
@@ -50,12 +51,17 @@ public class NIOTest {
             ByteBuffer buffer=ByteBuffer.allocate(1024);
             //3.发送数据到缓冲区
 
-            buffer.put(new Date().toString().getBytes());
+            Scanner scanner=new Scanner(System.in);
+            while (scanner.hasNext()){
+                String line=scanner.next();
+                buffer.put(line.getBytes());
 
-            //将缓冲区换为读模式
-            buffer.flip();
-            socketChannel.write(buffer);
-            buffer.clear();
+                //将缓冲区换为读模式
+                buffer.flip();
+                socketChannel.write(buffer);
+                buffer.clear();
+            }
+
             //关闭通道
             socketChannel.close();
         } catch (IOException e) {
