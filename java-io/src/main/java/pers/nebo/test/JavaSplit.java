@@ -5,7 +5,7 @@ package pers.nebo.test;
  */
 public class JavaSplit {
 
-    //TEST
+    //TEST1111111
     public static void main(String[] args) {
         String day="2018/08/16";
        String [] date=day.split("/");
