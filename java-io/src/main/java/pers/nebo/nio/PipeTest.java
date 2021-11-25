@@ -5,7 +5,6 @@ import org.junit.Test;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.Pipe;
-
 public class PipeTest {
 
     /**
@@ -35,7 +34,7 @@ public class PipeTest {
             //4. 读取sourceChannel 中的数据放到缓冲区中
 
             buffer.flip();
-
+            int test=1;
             int len=sourceChannel.read(buffer);
             System.out.println(new String(buffer.array(),0,len));
             sourceChannel.close();
