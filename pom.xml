@@ -5,7 +5,6 @@
 	<artifactId>java-study</artifactId>
 	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-
 	<modules>
 		<module>java-thread</module>
 		<module>java-dsa</module>
