@@ -6,7 +6,7 @@ import pers.nebo.exercises.leetcode.Q1716_AlternatelyMrgedStrings;
 import static junit.framework.Assert.assertEquals;
 
 
-public class Q1716AlternatelyMrgedStringsTest {
+public class Q1716_AlternatelyMrgedStringsTest {
     @Test
     public void testmergeAlternatelyTest(){
 
