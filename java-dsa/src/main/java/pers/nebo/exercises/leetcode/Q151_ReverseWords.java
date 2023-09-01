@@ -1,5 +1,9 @@
 
 package pers.nebo.exercises.leetcode;
+
+import java.util.Arrays;
+import java.util.Collections;
+
 /**
 * @author nebo
 * @E-mail:nebofeng@gmail.com
@@ -8,17 +12,27 @@ package pers.nebo.exercises.leetcode;
 
 				For example,
 				Given s = "the sky is blue",
-				return "blue is sky the". 
+				return "blue is sky the".
 */
-public class Reverse_Words_in_a_String {
-	
-	 public String reverseWords(String s) {	  
+public class Q151_ReverseWords {
+	public static void main(String[] args) {
+		String[] tmp={""};
+		int a=tmp.length;
+	}
+	 public String reverseWords(String s) {
 		 String string=s.trim();
-	     return reverse(string,0).toString(); 
+	     return reverse(string,0).toString();
 	 }
 
-	/** 
-	 * @Title: reverse 
+	public String reverseWords_2(String s) {
+		String string=s.trim();
+		String[] words=string.split("\\s+");
+		Collections.reverse(Arrays.asList(words));
+		return  String.join(" ",words);
+	}
+
+	/**
+	 * @Title: reverse
 	 * @Description: TODO
 	 * @return: String
 	 */
@@ -31,7 +45,7 @@ public class Reverse_Words_in_a_String {
 		while(index<string.length()&&string.charAt(index)==' '){
 			index++;
 		}
-		if(lastIndex == 0){  
+		if(lastIndex == 0){
 	        return reverse(string,index).append(cur);
 		}
 		return reverse(string,index).append(cur).append(' ');
